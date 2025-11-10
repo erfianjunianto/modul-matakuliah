@@ -1,138 +1,136 @@
-# 📘 MODUL BLOCKCHAIN
-### Program Studi Sistem Informasi — Semester 7
+
+# 📘 MATERI PERKULIAHAN BLOCKCHAIN
+### Program Studi Sistem Informasi — Semester 7  
 **Dosen Pengampu:** Erfian Junianto, S.T., M.Kom., CDMP  
 **SKS:** 3 (2 teori, 1 praktikum)
 
 ---
 
-## Pertemuan 1 — Pengantar Blockchain
+## 🧩 Pertemuan 1 — Konsep Dasar dan Sejarah Blockchain
 
 ### Tujuan Pembelajaran:
 Mahasiswa memahami konsep dasar, sejarah, dan karakteristik utama blockchain sebagai teknologi desentralisasi.
 
 ### Materi Pokok:
-- Sejarah munculnya blockchain (Bitcoin oleh Satoshi Nakamoto, 2008)
-- Konsep **Distributed Ledger Technology (DLT)**
-- Perbedaan sistem **terpusat**, **terdesentralisasi**, dan **terdistribusi**
-- Struktur dasar jaringan peer-to-peer (P2P)
-- Manfaat dan tantangan teknologi blockchain dalam sistem informasi
+- Sejarah munculnya blockchain (Bitcoin oleh Satoshi Nakamoto, 2008)  
+- Konsep **Distributed Ledger Technology (DLT)**  
+- Perbedaan sistem **terpusat**, **terdesentralisasi**, dan **terdistribusi**  
+- Struktur dasar jaringan peer-to-peer (P2P)  
+- Manfaat dan tantangan blockchain dalam sistem informasi  
 
 ### Penjelasan:
-Blockchain adalah sistem pencatatan digital yang terdistribusi dan aman. Setiap transaksi disimpan dalam blok, dan setiap blok saling terhubung membentuk rantai. Tidak ada satu pihak yang memiliki kendali penuh atas data — inilah yang membuatnya transparan dan tahan manipulasi.
+Blockchain merupakan sistem pencatatan digital yang transparan dan terdistribusi, di mana setiap transaksi disimpan dalam blok dan dihubungkan secara kriptografis. Teknologi ini mengubah paradigma kepercayaan dari otoritas pusat menjadi konsensus jaringan.
 
 ### Contoh Kasus:
-Transaksi Bitcoin antar pengguna tanpa melalui bank menggunakan alamat publik dan privat key.
+Transaksi Bitcoin antara dua pengguna tanpa bank sebagai perantara.
 
 ### Latihan:
-Jelaskan perbedaan antara *centralized* dan *decentralized network* disertai ilustrasi.
+Jelaskan dengan diagram perbedaan antara *centralized network* dan *decentralized network*.
 
 ---
 
-## Pertemuan 2 — Struktur Blok dan Fungsi Hash
+## 🧱 Pertemuan 2 — Struktur Blok dan Mekanisme Hashing
 
 ### Tujuan:
-Mahasiswa memahami struktur blok blockchain dan peran hash dalam menjamin keamanan data.
+Mahasiswa memahami struktur blok pada blockchain serta bagaimana fungsi hash menjaga integritas data.
 
 ### Materi Pokok:
-- Elemen dasar blok: `Block Header`, `Block Body`, `Previous Hash`, `Nonce`, `Timestamp`
-- Fungsi hash (SHA-256)
-- Mekanisme rantai blok
-- Integritas data dengan hash chaining
+- Komponen blok: `Header`, `Body`, `Previous Hash`, `Nonce`, `Timestamp`  
+- Fungsi hash (SHA-256)  
+- Konsep hash chaining  
+- Integritas data dan immutability  
 
 ### Penjelasan:
-Setiap blok berisi hash unik hasil dari data dalam blok tersebut. Jika ada perubahan sedikit saja pada data, hash akan berubah drastis. Inilah yang menjamin keutuhan dan keaslian data di blockchain.
+Hashing memastikan setiap blok memiliki identitas unik. Jika data dalam blok diubah, hash juga berubah, menyebabkan inkonsistensi pada rantai blok. Inilah dasar keamanan blockchain.
 
 ### Contoh:
-Gunakan **SHA-256 generator** online untuk melihat perubahan hash akibat satu huruf yang diubah.
+Gunakan SHA-256 online generator untuk melihat perubahan hash akibat modifikasi data kecil.
 
 ### Latihan:
-Buat simulasi sederhana di Python atau PHP untuk menghasilkan hash dari input teks.
+Buat program sederhana (PHP/Python) untuk menghasilkan hash dari input teks.
 
 ---
 
-## Pertemuan 3 — Algoritma Konsensus
+## 🔐 Pertemuan 3 — Algoritma Konsensus dalam Blockchain
 
 ### Tujuan:
-Mahasiswa mampu menjelaskan dan membedakan berbagai mekanisme konsensus dalam blockchain.
+Mahasiswa dapat membedakan berbagai jenis mekanisme konsensus dan fungsinya dalam menjaga validitas jaringan blockchain.
 
 ### Materi Pokok:
-- Konsep **konsensus** dalam jaringan terdistribusi
-- Algoritma:  
-  - Proof of Work (PoW)  
-  - Proof of Stake (PoS)  
-  - Delegated Proof of Stake (DPoS)  
-  - Proof of Authority (PoA)
-- Keamanan dan efisiensi energi
+- Prinsip konsensus dalam sistem terdistribusi  
+- Proof of Work (PoW)  
+- Proof of Stake (PoS)  
+- Delegated Proof of Stake (DPoS)  
+- Proof of Authority (PoA)  
 
 ### Penjelasan:
-Konsensus adalah cara jaringan menyetujui data transaksi tanpa otoritas pusat. Misalnya, PoW mengharuskan node menyelesaikan teka-teki kriptografi untuk menambang blok baru.
+Konsensus adalah mekanisme bagaimana semua node sepakat terhadap status buku besar. PoW mengandalkan daya komputasi, sementara PoS mengandalkan kepemilikan token sebagai bukti partisipasi.
 
 ### Contoh:
-Perbandingan PoW (Bitcoin) dan PoS (Ethereum 2.0) dalam hal kecepatan dan konsumsi energi.
+Perbandingan PoW (Bitcoin) dengan PoS (Ethereum 2.0) dalam hal efisiensi dan keamanan.
 
 ### Latihan:
-Buat tabel perbandingan antar algoritma konsensus berdasarkan kelebihan dan kekurangan.
+Buat tabel perbandingan kelebihan dan kekurangan antar algoritma konsensus.
 
 ---
 
-## Pertemuan 4 — Transaksi dan Node
+## 🔁 Pertemuan 4 — Transaksi, Node, dan Validasi Jaringan
 
 ### Tujuan:
-Mahasiswa memahami bagaimana transaksi diproses, divalidasi, dan disimpan di blockchain.
+Mahasiswa memahami mekanisme transaksi di blockchain dan peran node dalam menjaga validitas jaringan.
 
 ### Materi Pokok:
-- Komponen transaksi
-- Jenis node: Full Node, Light Node, Miner Node
-- Validasi transaksi dan propagasi blok
-- Mempool dan mekanisme broadcast
+- Struktur transaksi blockchain  
+- Jenis node: Full Node, Light Node, Miner Node  
+- Proses validasi dan broadcast transaksi  
+- Mempool dan block propagation  
 
 ### Penjelasan:
-Setiap transaksi baru disiarkan ke seluruh node. Node memverifikasi validitas transaksi, lalu transaksi valid dimasukkan ke dalam blok baru oleh miner.
+Transaksi baru disiarkan ke seluruh node di jaringan. Node memverifikasi validitas transaksi sebelum dimasukkan ke dalam blok baru oleh miner. Semua node kemudian memperbarui salinan buku besar masing-masing.
 
 ### Contoh:
-Simulasi transaksi antara dua alamat Ethereum di Ganache (local blockchain).
+Simulasi transaksi antara dua alamat Ethereum menggunakan Ganache.
 
 ### Latihan:
-Gunakan **Remix IDE + Ganache** untuk membuat dan memverifikasi transaksi sederhana.
+Gunakan Remix IDE dan Ganache untuk memverifikasi transaksi antar akun lokal.
 
 ---
 
-## Pertemuan 5 — Platform Blockchain Populer
+## ⚙️ Pertemuan 5 — Platform Blockchain Populer: Bitcoin, Ethereum, dan Hyperledger
 
 ### Tujuan:
-Mahasiswa mengenal berbagai platform blockchain dan karakteristiknya.
+Mahasiswa mengenal dan membedakan beberapa platform blockchain utama beserta ekosistemnya.
 
 ### Materi Pokok:
-- Bitcoin Blockchain
-- Ethereum Blockchain
-- Hyperledger Fabric
-- Binance Smart Chain
-- Cardano & Solana overview
+- Bitcoin dan mekanisme transaksi UTXO  
+- Ethereum dan konsep akun  
+- Hyperledger Fabric (blockchain privat)  
+- Binance Smart Chain, Cardano, Solana  
 
 ### Penjelasan:
-Setiap platform memiliki arsitektur, algoritma konsensus, dan kegunaan yang berbeda. Ethereum berfokus pada *smart contract*, sedangkan Hyperledger digunakan dalam lingkungan korporat.
+Setiap platform memiliki tujuan dan arsitektur berbeda. Bitcoin digunakan untuk transaksi keuangan, sedangkan Ethereum memungkinkan *smart contract*. Hyperledger banyak digunakan untuk sistem enterprise.
 
 ### Contoh:
-Perbandingan antara Ethereum (publik) dan Hyperledger (private blockchain).
+Perbandingan Ethereum (publik) dan Hyperledger (privat) dalam penerapan bisnis.
 
 ### Latihan:
-Tulis laporan singkat tentang kelebihan dan kekurangan Ethereum dan Hyperledger dalam konteks bisnis.
+Tulis laporan singkat mengenai kelebihan dan kekurangan Hyperledger untuk perusahaan logistik.
 
 ---
 
-## Pertemuan 6 — Pengenalan Smart Contract
+## 💻 Pertemuan 6 — Pengenalan Smart Contract dan Bahasa Solidity
 
 ### Tujuan:
-Mahasiswa mampu membuat *smart contract* sederhana menggunakan Solidity di Remix IDE.
+Mahasiswa memahami konsep *smart contract* dan mampu membuat kontrak sederhana menggunakan Solidity di Remix IDE.
 
 ### Materi Pokok:
-- Konsep Smart Contract
-- Bahasa pemrograman Solidity
-- Struktur dasar program (pragma, contract, function)
-- Kompilasi dan testing di Remix IDE
+- Pengertian *smart contract*  
+- Struktur dasar kontrak Solidity  
+- Variabel, fungsi, dan event  
+- Kompilasi dan testing di Remix IDE  
 
 ### Penjelasan:
-Smart contract adalah program otomatis yang berjalan di blockchain. Kontrak ini mengeksekusi transaksi berdasarkan kondisi yang telah disepakati tanpa perantara.
+Smart contract adalah perjanjian digital yang berjalan otomatis ketika kondisi tertentu terpenuhi. Ia menghilangkan kebutuhan perantara dalam transaksi.
 
 ### Contoh Kode:
 ```solidity
@@ -154,200 +152,196 @@ contract SimpleStorage {
 
 ### Latihan:
 
-Buat kontrak untuk menyimpan dan mengambil data nama pengguna.
+Buat smart contract yang menyimpan nama dan alamat pengguna.
 
 ---
 
-## Pertemuan 7 — Deployment Smart Contract
+## 🚀 Pertemuan 7 — Deployment Smart Contract di Jaringan Lokal
 
 ### Tujuan:
 
-Mahasiswa dapat melakukan *deploy* dan pengujian smart contract pada jaringan lokal.
+Mahasiswa mampu melakukan *deploy* dan menguji smart contract di jaringan lokal (Ganache).
 
 ### Materi Pokok:
 
-* Ganache (Private Blockchain)
+* Konfigurasi Ganache
 * Penggunaan MetaMask
-* Deployment di test network
-* Interaksi dengan contract via Remix atau Web3.js
+* Deployment ke jaringan test (Ropsten/Testnet)
+* Interaksi dengan kontrak menggunakan Web3.js
 
 ### Penjelasan:
 
-Ganache digunakan untuk membuat jaringan blockchain lokal. Mahasiswa dapat menguji *smart contract* tanpa biaya gas riil.
+Ganache memungkinkan mahasiswa menjalankan jaringan blockchain lokal untuk menguji smart contract tanpa biaya gas nyata.
 
 ### Contoh:
 
-Deploy kontrak `SimpleStorage` di Ganache dan uji fungsi `set()` dan `get()`.
+Deploy kontrak `SimpleStorage` ke Ganache dan uji fungsi `set()` dan `get()` melalui Remix.
 
 ### Latihan:
 
-Buat kontrak sederhana untuk mencatat daftar peserta menggunakan array.
+Buat kontrak untuk mencatat data peserta kuliah menggunakan array.
 
 ---
 
-## Pertemuan 8 — UTS
+## 🧠 Pertemuan 8 — Ujian Tengah Semester (UTS)
 
-Evaluasi pemahaman konsep dasar blockchain, struktur blok, hash, konsensus, dan smart contract melalui ujian teori dan studi kasus.
+Evaluasi pemahaman konsep dasar blockchain, struktur blok, hash, algoritma konsensus, transaksi, dan smart contract.
 
 ---
 
-## Pertemuan 9 — Desain Sistem Berbasis Blockchain
+## 🧩 Pertemuan 9 — Desain Sistem Informasi Berbasis Blockchain
 
 ### Tujuan:
 
-Mahasiswa mampu merancang arsitektur sistem informasi yang memanfaatkan blockchain.
+Mahasiswa mampu merancang arsitektur sistem informasi dengan integrasi blockchain.
 
 ### Materi Pokok:
 
-* Identifikasi kebutuhan sistem
-* Desain arsitektur dan komponen
-* Integrasi blockchain dalam sistem informasi
-* Diagram data flow blockchain
+* Analisis kebutuhan sistem
+* Desain arsitektur blockchain
+* Diagram alur data dan transaksi
+* Integrasi dengan sistem informasi
 
 ### Penjelasan:
 
-Sebelum mengimplementasikan blockchain, penting untuk menentukan di mana blockchain dibutuhkan (misalnya untuk transparansi, audit trail, atau kepercayaan).
+Tidak semua sistem membutuhkan blockchain. Mahasiswa harus mampu menganalisis masalah dan menentukan posisi blockchain dalam solusi.
 
 ### Contoh:
 
-Desain sistem sertifikat digital berbasis blockchain untuk universitas.
+Sistem sertifikat digital berbasis blockchain di universitas.
 
 ### Latihan:
 
-Gambarlah diagram arsitektur sistem blockchain sesuai studi kasus pilihan Anda.
+Desain diagram arsitektur sistem blockchain untuk kasus peminjaman aset kampus.
 
 ---
 
-## Pertemuan 10 — Integrasi Blockchain dengan Aplikasi Lain
+## 🌐 Pertemuan 10 — Integrasi Blockchain dengan Aplikasi Web Menggunakan Web3.js
 
 ### Tujuan:
 
-Mahasiswa mampu mengintegrasikan blockchain dengan aplikasi web menggunakan Web3.js.
+Mahasiswa mampu menghubungkan smart contract dengan aplikasi web melalui Web3.js.
 
 ### Materi Pokok:
 
-* Web3.js dan JSON-RPC API
-* Komunikasi antara frontend dan smart contract
-* Membaca dan menulis data ke blockchain
-* Konsep *gas fee* dan akun MetaMask
+* Pengenalan Web3.js dan JSON-RPC
+* Interaksi antara frontend dan blockchain
+* Membaca dan menulis data ke kontrak
+* Manajemen akun dan gas fee
 
 ### Penjelasan:
 
-Aplikasi frontend dapat berinteraksi langsung dengan smart contract menggunakan library seperti Web3.js. Ini memungkinkan pembuatan aplikasi desentralisasi (*dApp*).
+Web3.js memungkinkan aplikasi web (*dApp*) untuk berkomunikasi langsung dengan blockchain, memfasilitasi transaksi dan pembacaan data secara real-time.
 
 ### Contoh:
 
-Integrasi smart contract `SimpleStorage` dengan HTML dan JavaScript menggunakan Web3.js.
+Integrasi smart contract `SimpleStorage` ke halaman web menggunakan JavaScript dan MetaMask.
 
 ### Latihan:
 
-Buat antarmuka web untuk menampilkan dan memperbarui nilai dari smart contract.
+Buat form web yang dapat menulis dan membaca data dari smart contract.
 
 ---
 
-## Pertemuan 11 — Studi Kasus Penerapan Blockchain
+## 🧮 Pertemuan 11 — Studi Kasus Penerapan Blockchain dalam Dunia Nyata
 
 ### Tujuan:
 
-Mahasiswa menganalisis penerapan blockchain di dunia nyata.
+Mahasiswa dapat mengidentifikasi penerapan blockchain dalam berbagai sektor industri.
 
 ### Materi Pokok:
 
-* Blockchain di bidang keuangan (DeFi)
-* Blockchain untuk logistik dan supply chain
-* E-voting, e-health, dan sertifikat digital
-* NFT dan aset digital
+* DeFi (Decentralized Finance)
+* Supply Chain Management
+* E-voting dan E-health
+* NFT dan Digital Identity
 
 ### Penjelasan:
 
-Blockchain telah digunakan untuk menciptakan sistem yang lebih transparan dan efisien, misalnya pelacakan barang dari produsen ke konsumen secara real-time.
+Blockchain memberikan transparansi dan akuntabilitas yang tinggi, menjadikannya solusi potensial di berbagai sektor seperti keuangan, logistik, dan pemerintahan.
 
 ### Contoh:
 
-Sistem e-voting berbasis blockchain untuk pemilihan internal kampus.
+Sistem e-voting kampus berbasis blockchain.
 
 ### Latihan:
 
-Presentasi kelompok studi kasus penerapan blockchain di bidang tertentu.
+Presentasikan studi kasus penerapan blockchain dalam bidang pilihan kelompok Anda.
 
 ---
 
-## Pertemuan 12 — Keamanan dan Privasi Blockchain
+## 🔒 Pertemuan 12 — Keamanan dan Privasi pada Blockchain
 
 ### Tujuan:
 
-Mahasiswa memahami risiko keamanan dan privasi dalam blockchain.
+Mahasiswa memahami isu keamanan dan privasi dalam sistem blockchain serta strategi mitigasinya.
 
 ### Materi Pokok:
 
-* Serangan umum: 51% attack, Sybil attack, replay attack
-* Smart contract vulnerabilities
+* Jenis serangan: 51% attack, Sybil attack, replay attack
+* Kerentanan smart contract
 * Praktik keamanan terbaik
-* Audit dan verifikasi smart contract
+* Audit dan verifikasi kontrak
 
 ### Penjelasan:
 
-Meskipun aman secara kriptografi, blockchain tetap dapat diserang jika implementasi smart contract tidak hati-hati.
-
-### Contoh:
-
-Kasus *The DAO Hack (2016)* akibat bug pada smart contract Ethereum.
+Meskipun blockchain aman secara desain, implementasi yang buruk dapat menimbulkan celah keamanan. Smart contract perlu diaudit untuk menghindari kerugian seperti *The DAO Hack* (2016).
 
 ### Latihan:
 
-Analisis kode smart contract dan identifikasi potensi bug.
+Analisis kode kontrak dan identifikasi potensi bug.
 
 ---
 
-## Pertemuan 13 — Etika, Hukum, dan Regulasi Blockchain
+## ⚖️ Pertemuan 13 — Etika, Hukum, dan Regulasi Blockchain di Indonesia
 
 ### Tujuan:
 
-Mahasiswa memahami aspek legal dan etika penggunaan blockchain.
+Mahasiswa memahami aspek etis dan legal terkait penerapan blockchain dan aset digital.
 
 ### Materi Pokok:
 
-* Regulasi penggunaan aset kripto di Indonesia (Bappebti, OJK, BI)
+* Regulasi aset kripto di Indonesia (Bappebti, OJK, BI)
 * Perlindungan data pribadi (UU PDP)
 * Etika penggunaan data publik di blockchain
 
 ### Penjelasan:
 
-Blockchain bersifat transparan, sehingga isu privasi menjadi penting. Mahasiswa harus memahami batasan hukum dan etika saat mengembangkan solusi berbasis blockchain.
+Blockchain yang bersifat publik menimbulkan tantangan privasi. Pengembang wajib memahami regulasi yang berlaku agar sistem tetap legal dan etis.
 
 ### Latihan:
 
-Diskusikan bagaimana menjaga privasi pengguna dalam sistem blockchain publik.
+Diskusikan strategi menjaga privasi pengguna di blockchain publik.
 
 ---
 
-## Pertemuan 14 — Presentasi Proyek Akhir
+## 🧾 Pertemuan 14 — Presentasi Proyek Akhir Blockchain
 
 ### Tujuan:
 
-Mahasiswa mempresentasikan proyek sistem informasi berbasis blockchain.
+Mahasiswa mampu mempresentasikan dan mendemonstrasikan proyek sistem informasi berbasis blockchain.
 
 ### Aktivitas:
 
-* Presentasi hasil proyek kelompok
-* Penilaian ide, desain, dan implementasi
-* Refleksi pembelajaran
+* Presentasi hasil proyek
+* Penilaian ide, arsitektur, dan implementasi
+* Refleksi hasil belajar
 
 ### Contoh Proyek:
 
-* Sistem sertifikat digital
-* Manajemen supply chain transparan
-* E-voting berbasis blockchain kampus
+* Sistem sertifikat digital kampus
+* E-voting mahasiswa
+* Supply chain transparan
 
 ---
 
-## Pertemuan 15 — UAS
+## 🧩 Pertemuan 15 — Ujian Akhir Semester (UAS)
 
-Evaluasi akhir berbasis laporan proyek dan tes teori tentang desain dan penerapan blockchain dalam sistem informasi.
+Evaluasi akhir berbasis laporan proyek dan ujian teori yang mencakup desain, keamanan, dan penerapan blockchain dalam sistem informasi.
 
 ---
 
-# Referensi
+# 📚 Referensi
 
 1. Antonopoulos, A. M. (2022). *Mastering Bitcoin: Programming the Open Blockchain*. O'Reilly Media.
 2. Mougayar, W. (2021). *The Business Blockchain*. Wiley.
